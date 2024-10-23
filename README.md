@@ -52,7 +52,7 @@ The project comprises the following main files:
 
 ## 🗣️ Text-to-Speech Functionality
 
-The application uses **FreeTTS.jar** for converting patient information into speech, providing an accessible interface for users who prefer or require auditory feedback.
+The application uses **FreeTTS.jar** for calling out a patient by converting patient information into Speech.
 
 ## 📚 College Project
 
