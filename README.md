@@ -8,8 +8,7 @@ This **Patient Management System** is a Java-based application designed to simpl
 
 ### Key Features:
 - **Java-based Application**: Developed entirely in Java for cross-platform compatibility.
-- **MySQL Database Integration**: Utilizes MySQL to store and manage patient records efficiently.
-- **JDBC (Java Database Connectivity)**: MySQL Connector (JDBC) is used to establish a seamless connection between the application and the database.
+- **MySQL Server Integration**: The application connects to a MySQL server over a network for database management.
 - **Text-to-Speech Conversion**: Implemented with **FreeTTS.jar** to enable text-to-speech functionality for patient details.
 - **Executable File**: The project has been compiled into `.exe` for easy execution on Windows platforms.
 
@@ -24,16 +23,14 @@ The project comprises the following main files:
 ## 🛠️ Technologies Used
 
 - **Java**: Core language used for building the application.
-- **MySQL**: For database management of patient data.
-- **JDBC (MySQL Connector)**: For database connection and interaction.
+- **MySQL**: For database management of patient data (via a remote server).
 - **FreeTTS.jar**: For text-to-speech conversion, providing audio feedback.
   
 ## 🚀 How to Run the Project
 
 ### Prerequisites:
 - **Java Runtime Environment (JRE)**: Ensure you have JRE installed on your system.
-- **MySQL Database**: The application requires a running instance of MySQL.
-- **JDBC Driver**: Ensure the `mysql-connector-java.jar` is available in the classpath.
+- **Network Access to MySQL Server**: The application requires access to a MySQL server over a network.
 
 ### Steps to Run:
 
@@ -48,10 +45,10 @@ The project comprises the following main files:
      java -jar PatientManagementSystem.jar
      ```
 
-3. **Database Setup**:
-   - Make sure you have MySQL running.
-   - Import the necessary database schema (provided in the project repository or available in the `.xml` file).
-   - Update the JDBC connection settings if necessary.
+3. **Network Configuration**:
+   - Ensure that your PC is connected to the network.
+   - The application connects to a remote MySQL server. Verify that the server is running and accessible over the network.
+   - The application will handle the connection to the database server automatically, so no additional configuration is needed.
 
 ## 🗣️ Text-to-Speech Functionality
 
@@ -59,8 +56,8 @@ The application uses **FreeTTS.jar** for converting patient information into spe
 
 ## 📚 College Project
 
-This project was developed as part of our college curriculum under the **Java Micro Project** category. It demonstrates the effective use of Java, MySQL, and external libraries for real-world application development.
+This project was developed as part of our college curriculum under the **Java Micro Project** category. It demonstrates the effective use of Java, MySQL (over a network), and external libraries for real-world application development.
 
 ## 📜 License
 
-This project is licensed under [Your Preferred License].
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
