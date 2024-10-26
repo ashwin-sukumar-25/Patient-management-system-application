@@ -156,17 +156,3 @@ public class DataBase {
                 s.execute("delete from appointments where Patient_ID='"+pid+"'");
         }
 }
-class MyLabel extends JLabel {
-        public MyLabel(String text) {
-                this.setText(text);
-                this.setForeground(new Color(51, 51, 51));
-                this.setFont(new Font("Monospaced",Font.BOLD,20));
-        }
-}
-class MyLabelTitle extends JLabel {
-        public MyLabelTitle(String text) {
-                this.setText(text);
-                this.setForeground(new Color(102, 0, 153));
-                this.setFont(new Font("Monospaced",Font.BOLD,20));
-        }
-}
