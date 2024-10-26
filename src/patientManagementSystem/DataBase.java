@@ -21,7 +21,7 @@ public class DataBase {
         private ResultSet rs;
         public DataBase() throws ClassNotFoundException,SQLException{
                 Class.forName("com.mysql.cj.jdbc.Driver");
-        c=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/illuminati","root","root"); //192.168.59.237 DESKTOP-ISKJEFP
+        c=DriverManager.getConnection("jdbc:mysql://192.168.53.101:3306/illuminati","root","root"); //192.168.59.237 DESKTOP-ISKJEFP
         s=c.createStatement();
         }
         public String checkPassDoc(String name) throws SQLException {
